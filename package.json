@@ -1,0 +1,16 @@
+{
+  "name": "sangsangin-vercel-demo",
+  "version": "1.0.0",
+  "private": true,
+  "description": "상상인 교육 Lesson 3 — Vercel 배포 따라하기 데모 사이트",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start"
+  },
+  "dependencies": {
+    "next": "^15.1.6",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0"
+  }
+}
