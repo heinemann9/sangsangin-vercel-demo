@@ -1,5 +1,7 @@
 // 환경변수 NEXT_PUBLIC_TEAM_NAME 값을 화면에 표시한다.
 // Vercel에서 이 값을 넣고 재배포하면 아래 팀 이름이 바뀐다 → 환경변수 실습용.
+import Notices from "./notices";
+
 const teamName = process.env.NEXT_PUBLIC_TEAM_NAME || "우리 팀";
 const isEnvSet = Boolean(process.env.NEXT_PUBLIC_TEAM_NAME);
 
@@ -47,6 +49,8 @@ export default function Home() {
           {isEnvSet ? `✅ 설정됨 → "${teamName}"` : "⚠️ 아직 설정 안 됨 (기본값 표시 중)"}
         </div>
       </div>
+
+      <Notices />
 
       <p style={{ marginTop: "40px", fontSize: "13px", color: "#94a3b8" }}>
         Lesson 3 · Vercel + Supabase 배포 실습 데모
